@@ -19,8 +19,8 @@ cd $dist_path
 git init
 git add -A
 git commit -m "deploy, $commit_info"
-#git push -f $push_addr HEAD:$push_branch
-git push -fgit@github.com:Lm905/weiyang-blog.git master:gh-pages
+git push -f $push_addr master:$push_branch
+#git push -fgit@github.com:Lm905/weiyang-blog.git master:gh-pages
 
 cd -
 rm -rf $dist_path
